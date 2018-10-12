@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="236dp"
+    android:layout_gravity="center"
+    android:background="@drawable/alert_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="You have 30 minutes left to complete this job, how is it going?"
+        android:fontFamily="fonts/GothamPro-Bold.ttf"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <Button
+            android:id="@+id/yesButton"
+            android:layout_width="240dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            android:text="RUNNING ON-TIME"
+            android:fontFamily="fonts/GothamPro-Medium.ttf"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="240dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:text="RUNNING BEHIND"
+            android:textColor="@color/whiteButtonBorder"
+            android:fontFamily="fonts/GothamPro-Medium.ttf" />
+    </LinearLayout>
+
+</LinearLayout>
